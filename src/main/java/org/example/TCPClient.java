@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 public class TCPClient {
+    //this is the max packet(message) length, for safety, cannot smaller than 8, because we need a header to know how long the message is.
     private static final int MSS = 10;
     private static final String host = "127.0.0.1";
     private static final int port = 8080;
